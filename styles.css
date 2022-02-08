@@ -1,0 +1,139 @@
+ 
+        * {
+            box-sizing: border-box; 
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Caveat', cursive;
+        }
+
+        .root {
+        --primary: #F2C94C;
+        --black: #333333;
+        --width-break: 600px;
+        }
+
+        #btn-translate {
+            font-family: 'Gochi Hand', cursive;
+            width: 10%;
+            font-size: 1.3rem;
+            border-bottom-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            align-items: center;
+            display: block;
+            margin: auto;
+            padding: 0.5rem;
+            background-color: rgb(6, 6, 68); 
+            color: rgb(226, 77, 8);
+            cursor: pointer;
+            border-width: 2px;
+            border-style: outset;
+        }
+
+        #txt-input {
+            width: 50%;
+            height: 15vh;
+            display: block;
+            margin: auto;
+            padding: 1rem;
+            background-color: rgb(241, 241, 20); 
+        }
+
+        #output {
+            border: 1px solid black;
+            font-weight: 100;
+            font-size: 3rem;
+            height: 15vh;
+            width: 50%;
+            margin: auto;
+            padding: 1rem;
+            text-align: center;
+            background-color: aquamarine;
+            font-style: 'Caveat', cursive;
+        }
+        
+        .img {
+            height: 30vh;
+            margin: auto;
+            width: 50vh;
+            padding: 1rem;
+            display: block;
+            
+        }
+
+        .footer .p {
+            max-width: var(--width-break);
+            margin: auto;
+            display: block;
+        }
+
+        textarea {
+            width: 70%;
+            margin: auto;
+            height: 5rem;
+            display: block;
+            padding: 1rem;
+            font-family: 'Caveat', cursive;
+            font-weight: lighter;
+            font-size: 1.8rem;
+        }
+
+        .footer .foot{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 0.5rem;
+            background-color: var(--primary);
+            text-align: center;
+            display: block;
+        }
+
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        footer {
+            background-color: #162aadf6;
+            width: 100%;
+        }
+
+        footer {
+            display: block;
+        }
+
+        footer p {
+            text-align: center;
+            font-family: 'Gochi Hand', cursive;
+            font-size: 2rem;
+            color: #F5E050;
+            width: 80%;
+            margin: auto;
+            padding-bottom: 1rem;
+
+    }
+
+        footer h1 {
+            text-align: center;
+            margin-bottom: 0.5rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            color: #F5E050;
+        }
+        
+        button {
+            padding: 1px 6px;   
+            border-width: 2px;
+            border-style: outset;
+            border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+        }
+
+        

@@ -6,15 +6,32 @@ var txtInput = document.querySelector("#txt-input");
 var outputDiv = document.querySelector("#output");
 
 // outputDiv.innerText = "Gaurav Buwa"
+var requestURL = "https://api.funtranslations.com/translate/dothraki.json";
 
-console.log(txtInput);
+function newURL(text){
+    return requestURL+"?" + "text=" + text;
+}
+
+//console.log(txtInput);
+
+function errorHandler(error){
+    console.log("Error occured :", error);
+    alert("An error has occured, please refresh or try again after sometime if the problem persists.");
+}
 
 function clickHandler() {
     // console.log("clicked!");
     // console.log(txtInput.value);
     // console.log
-
-    outputDiv.innerText = "ajsjsjsjsjsjsj  " + txtInput.value;
+    var inputText = txtInput.value;
+    fetch(newURL(inputText))
+    .then(response => response.json())
+    .then(json => {
+        var translatedText = json.contents.translated;
+        outputDiv.innerText = translatedText;
+    })
+    .catch(errorHandler);
+    //outputDiv.innerText = "ajsjsjsjsjsjsj  " + txtInput.value;
 }
 
 // console.log(btnTranslate);
@@ -23,4 +40,4 @@ function clickHandler() {
 // })
 
 
-btnTranslate.addEventListener("click", clickHandler)
+btnTranslate.addEventListener("click", clickHandler);
